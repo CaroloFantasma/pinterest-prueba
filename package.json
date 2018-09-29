@@ -1,0 +1,23 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio Carolina Lastra",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Portafolio",
+    "Laboratoria"
+  ],
+  "author": "Carolina Lastra",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "save-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0"
+  }
+}
