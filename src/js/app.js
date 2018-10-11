@@ -17,6 +17,13 @@ $(document).ready(function() {
   });
 });
 
+// Animación proyectos
+$('.hover').mouseleave(
+  function() {
+    $(this).removeClass('hover');
+  }
+);
+
 function aboutMe() {
   location.href = '#aboutMe';
 }
