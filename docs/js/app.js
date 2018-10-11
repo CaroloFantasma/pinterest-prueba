@@ -1,3 +1,6 @@
+AOS.init();
+
+
 // Animación texto
 $(document).ready(function() {
   let mouseX, mouseY;
@@ -14,6 +17,13 @@ $(document).ready(function() {
   });
 });
 
+// Animación proyectos
+$('.hover').mouseleave(
+  function() {
+    $(this).removeClass('hover');
+  }
+);
+
 function aboutMe() {
   location.href = '#aboutMe';
 }
@@ -29,4 +39,5 @@ function projects() {
 function skills() {
   location.href = '#skills';
 }
+
 

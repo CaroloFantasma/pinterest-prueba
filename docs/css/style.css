@@ -1,9 +1,18 @@
+body {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
 
+#proyectos {
+  padding-top: 6.5em;
+}
+
 .nav {
-  height: 3.8em;
+  height: 3.9em;
   width: 100%;
   background-color: #e23d45;
   position: relative;
@@ -112,8 +121,10 @@
 }
 
 #developerImg {
-  margin-top: 17.2em;
-  width: 46%;
+  margin-top: 23.2em;
+  width: 30%;
+  position: absolute; 
+  bottom:0px
 }
 
 /* Animación cielo nocturno */
@@ -195,45 +206,145 @@ animation:move-twink-back 200s linear infinite;
 .title {
   font-family: 'Raleway', sans-serif;
   color: transparent;
-  font-size: 80px;
+  font-size: 90px;
   background: url("https://images.all-free-download.com/images/graphiclarge/abstract_green_blue_low_poly_background_vector_illustration_570260.jpg") repeat;
   -webkit-background-clip: text;
   padding-top: 1.8em;
   position:relative;
-  padding-left: 5em;
-  line-height:90px;
+  padding-left: 2.7em;
+  line-height: 95px;
   letter-spacing: -8px;
   position:relative;
   z-index:2;
+  font-weight: 800;
 }
 .subtitle {
   color: #Fafafa;
   display: block;
   text-transform: uppercase;
-  padding-top:10px;
-  margin-left: 28.5em;
+  padding-top: 15px;
+  margin-left: 19.5em;
   position:relative;
   z-index:2;
-  font-size: 15px;
+  font-size: 16px;
 }
 /* Fin animación título Front-end */
+
+/* inicio animación proyectos */
+figure.snip1256 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #07090c;
+  font-size: 16px;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+
+}
+
+figure.snip1256 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+figure.snip1256 img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+figure.snip1256 figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% -50%;
+  -ms-transform-origin: 50% -50%;
+  transform-origin: 50% -50%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px;
+}
+
+figure.snip1256 h3,
+figure.snip1256 p {
+  line-height: 1.5em;
+}
+
+figure.snip1256 h3 {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+figure.snip1256 p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+figure.snip1256 .read-more {
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+
+figure.snip1256 .read-more:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+figure.snip1256:hover img,
+figure.snip1256.hover img {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+
+figure.snip1256:hover figcaption,
+figure.snip1256.hover figcaption {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* Fin animación proyectos */
 
 /* About me */
 #aboutMe {
   width: 100%;
   height: 100%;
-  background-color: rgba(114, 109, 109, 0.849);
   padding-top: 5.5%;
 }
 
 .cardAboutMe {
-  width: 50%;
+  width: 30%;
   height: 33.4em;
   margin-left: 25%;
 }
 
 .cardImg {
-  height: 20em;
+  height: 15em;
+  width: 55%;
 }
 
 .cardProyectGroup {
@@ -253,20 +364,15 @@ animation:move-twink-back 200s linear infinite;
 #projects {
   width: 100%;
   height: 100%;
-  background-color: rgba(114, 109, 109, 0.849);
 }
 
 #skills {
   height: 100%;
-  background-color: rgba(114, 109, 109, 0.849);
+  padding-top: 3.5em;
 }
 
 #iconsGroup {
-background-color: #Fafafa;
-width: 60%;
-height: 30em;
-margin-bottom:3%;
-margin-left: 20%;
+width: 55%;
 }
 
 @media (max-width: 768px) {
@@ -284,8 +390,9 @@ margin-left: 20%;
   }
 
   #developerImg {
-    margin-top: 18.3em;
+    margin-top: 31em;
     line-height: 20px;
+    width: 20em;
   }
 
   .subtitle {
@@ -308,8 +415,9 @@ margin-left: 20%;
 
 @media (min-width: 320px) and (max-width: 480px) {
   #developerImg {
-    margin-top: 19.2em;
-    width: 100%;
+    margin-top: 22.5em;
+    margin-left: 2.3em;
+    width: 75%;
   }
 
   .title {
@@ -359,15 +467,95 @@ margin-left: 20%;
   display: inline-block;
 	box-sizing: border-box;
 	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(34, 23, 23, 0.6);
+	box-shadow: 0 5px 1px 0px rgba(34, 23, 23, 0.6);
 	transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
-  font-size: 70px;
+  font-size: 65px;
+  margin: .5em;
 }
 
-.iconAnimation {
-  display: inline-block;
-  margin: 3.5%;
+div.row{
+  margin-right: 0px;
+}
+
+div.container-fluid{
+  padding-right: 0px;
+}
+
+.wrapper {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 8px 14px 32px 8px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 8px 14px 32px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 14px 32px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+  padding: 2.8em 0 0 1em;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 45px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 30px 58px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #272525;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  font-family: 'Raleway', sans-serif;
+  color: #3b3a3a;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+#aboutMeText {
+  height: 160px;
+  margin: 0 12px 0 12px;
+  font-family: 'Raleway', sans-serif;
+  color: #181717;
+  line-height: 1.7em;
+  font-weight: 500;
+  overflow: hidden;
 }
 
 
