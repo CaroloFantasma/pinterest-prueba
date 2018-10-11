@@ -7,6 +7,10 @@ body {
   box-sizing: border-box;
 }
 
+#proyectos {
+  padding-top: 6.5em;
+}
+
 .nav {
   height: 3.9em;
   width: 100%;
@@ -363,6 +367,8 @@ figure.snip1256.hover figcaption {
 
 #skills {
   height: 100%;
+  padding-top: 7em;
+  margin-left: 10em;
 }
 
 #iconsGroup {
@@ -370,7 +376,6 @@ background-color: #Fafafa;
 width: 60%;
 height: 30em;
 margin-bottom:3%;
-margin-left: 20%;
 }
 
 @media (max-width: 768px) {
@@ -469,10 +474,10 @@ margin-left: 20%;
 	transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
   font-size: 70px;
+  margin: .5em;
 }
 
 .iconAnimation {
-  display: inline-block;
   margin: 3.5%;
 }
 
